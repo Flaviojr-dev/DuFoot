@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+}
+
+button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    background: #f39c12;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+button#backToMenu,
+button#backToTeams,
+button#backToName {
+    background: #c0392b; /* vermelho escuro */
+    margin-top: 10px;
+}
+
+#matchScreen {
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+#scoreboard {
+    font-size: 2.5rem;
+    color: #f1c40f;
+}
+
+#highlightBox {
+    background-color: #000000;
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+#highlightBox h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#highlightList {
+    list-style: none;
+    padding-left: 0;
+}
+
+#highlightList li {
+    margin-bottom: 8px;
+    font-weight: 500;
+}   

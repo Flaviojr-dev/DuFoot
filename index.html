@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Menu Principal -->
+    <div id="menu">
+        <h1>Bem-vindo ao Gestor de Elenco</h1>
+        <button id="startGame">Iniciar Jogo</button>
+    </div>
+
+    <!-- Seleção de Time -->
+    <div id="teamSelection" style="display:none;">
+        <h2>Escolha seu Time</h2>
+        <button class="team">Flamengo</button>
+        <button class="team">Palmeiras</button>
+        <br><br>
+        <button id="backToMenu">Voltar</button>
+    </div>
+
+    <!-- Nome do Treinador -->
+    <div id="trainerName" style="display:none;">
+        <h2>Digite seu nome de treinador</h2>
+        <input type="text" id="nameInput" placeholder="Seu nome">
+        <br>
+        <button id="confirmName">Confirmar</button>
+        <button id="backToTeams">Voltar</button>
+    </div>
+
+    <!-- Tela de Elenco -->
+    <div id="teamScreen" style="display:none;">
+        <h2>Seu Elenco</h2>
+        <div id="playersList"></div>
+        <br>
+        <button id="backToName">Voltar</button>
+    </div>
+
+    <!-- Tela da Partida -->
+    <div id="matchScreen" style="display:none;">
+        <h2>Partida em andamento</h2>
+        <p id="matchInfo"></p>
+        <h3 id="timer">Tempo: 0'</h3>
+        <h2 id="scoreboard">0 x 0</h2>
+        <button id="botaoTaticaDuranteJogo">Mudar Tática</button>
+
+        <!-- Destaques -->
+        <div id="highlightBox" style="display:none;">
+            <h3>Destaques da Partida</h3>
+            <ul id="highlightList"></ul>
+        </div>
+    </div>
+
+    <!-- Menu de Tática -->
+    <div id="tacticsMenu" style="display:none;">
+        <h2>Menu de Tática</h2>
+
+        <div id="swapSection">
+            <h3>Trocar Jogadores</h3>
+            <label for="selectTitular">Titular:</label>
+            <select id="selectTitular"></select>
+
+            <label for="selectReserva">Reserva:</label>
+            <select id="selectReserva"></select>
+
+            <button id="swapPlayers">Trocar</button>
+        </div>
+
+        <div>
+            <h3>Escolher estilo de jogo</h3>
+            <select id="tacticSelect">
+                <option value="ofensiva">Ofensiva</option>
+                <option value="equilibrada" selected>Equilibrada</option>
+                <option value="defensiva">Defensiva</option>
+            </select>
+        </div>
+
+        <br>
+        <button id="confirmTactic">Voltar ao Jogo</button>
+    </div>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+</body>
+
+</html>
