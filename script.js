@@ -103,7 +103,7 @@ function showPlayers() {
     elencoDiv.appendChild(reservasList);
 
     const btnTatica = document.createElement('button');
-    btnTatica.textContent = 'Tática';
+    btnTatica.textContent = 'Jogar';
     btnTatica.addEventListener('click', () => {
         teamScreen.style.display = 'none';
         tacticsMenu.style.display = 'block';
